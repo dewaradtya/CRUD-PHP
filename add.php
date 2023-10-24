@@ -4,11 +4,12 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-auto p-6">
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="w-full max-w-md">
+    <div class="text-center mb-6">
         <a href="index.php" class="text-blue-500 text-2xl font-bold mb-6">Go to Home</a>
-        <br><br>
-        <form action="add.php" method="post" name="form1" class="w-1/2 bg-white p-4 rounded-lg shadow-md">
+    </div>
+        <form action="add.php" method="post" name="form1" class="bg-white p-4 rounded-lg shadow-md">
             <div class="mb-4">
                 <label for="judul_buku" class="block text-sm font-medium text-gray-600">Judul</label>
                 <input type="text" name="judul_buku" id="judul_buku" class="border border-gray-300 p-2 w-full rounded-md">
@@ -26,7 +27,7 @@
                 <input type="text" name="nomor_inventaris" id="nomor_inventaris" class="border border-gray-300 p-2 w-full rounded-md">
             </div>
             <div class="mt-4">
-                <button type="submit" name="Submit" class="bg-blue-500 w-20 text-white font-bold p-2 rounded-md hover:bg-blue-700 cursor-pointer">Add</button>
+                <button type="submit" name="Submit" class="font-bold block mx-auto w-20 mt-6 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-700">Add</button>
             </div>
         </form>
     <?php
